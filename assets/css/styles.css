@@ -1,0 +1,152 @@
+*,
+::before,
+::after {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --primary-color: rgb(79, 89, 114);
+}
+
+.avatar img {
+    display: block;
+    margin: 68px auto 38px;
+
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.email,
+.password {
+    position: relative;
+}
+
+input,
+label {
+    font-family: inherit;
+}
+input {
+    display: block;
+    border-width: 0px 1px 0px 0px;
+    width: 380px;
+    height: 60px;
+    padding: 16.5px 0px 16.5px 14px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: ease 0.05s;
+    border-radius: 5px;
+}
+
+.password {
+    margin-top: 30px;
+}
+
+input:hover {
+    border: 1px solid #000;
+}
+
+input:focus {
+    border: 2px solid var(--primary-color);
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    font-size: 12px;
+    color: var(--primary-color);
+    text-shadow: -0.1px -0.1px currentColor, 0.1px 0.1px currentColor;
+    translate: 0 -26px;
+    background: #fff;
+}
+
+label {
+    position: absolute;
+    color: #666;
+    left: 16.5px;
+    top: 30%;
+    transition: ease 0.5s;
+    padding: 2px;
+}
+
+.icon {
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    right: 0;
+
+    width: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(204, 204, 204, 0.2);
+}
+
+.icon span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    transition: ease 0.5s;
+}
+
+.icon span:hover {
+    border-radius: 50%;
+    background-color: rgba(204, 204, 204, 0.4);
+}
+
+.btn-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4f5972;
+    color: #fff;
+    width: 380px;
+    height: 60px;
+    margin: 32px 0;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.btn-login span {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-login:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.fyp a {
+    color: rgb(79, 89, 114);
+}
+

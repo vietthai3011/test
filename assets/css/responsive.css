@@ -1,0 +1,17 @@
+/* mobile */
+
+@media screen and (max-width: 767px){
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .info {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+    }
+}
