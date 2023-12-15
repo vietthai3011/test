@@ -1,6 +1,9 @@
 /* mobile */
 
 @media screen and (max-width: 767px){
+    main {
+    }
+
     .hero {
         flex-direction: column;
     }
@@ -13,5 +16,19 @@
         justify-content: center;
         flex-direction: column;
         gap: 0;
+    }
+
+    .group-block {
+        width: 100%;
+    }
+
+    .group-block .block {
+        padding: 0 20px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .logout {
+        margin: 0;
     }
 }
